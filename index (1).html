@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#projects">Recent Projects</a>
+    </nav>
+</header>
+
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <div class="homes">
+            <div class="home1">
+              <img src="pic.jpg" alt="Project 1">
+              <h2>Hello, I'm Andrea</h2>
+            </div>
+            
+            <div class="home">
+              <h3>About Me</h3>
+              <p>My name is Andrea N. Sawali. I was born on September 13, 2002. I'm 21 years old,
+                I am currently studying at the LSPU-San Pablo Campus and taking a BSINFO course.
+                And based on my educational attainment, I graduated primary level at Timbao Elementary School-Biñan Laguna in the year 2015-2016.
+                When I'm in high school, I graduated junior high at San Bartolome National High School in the 2018–2019 school year.
+                And lastly, I graduated senior high school in Crecencia Drusilla Lopez senior high school in the years 2020–2021.
+                My hobbies and interests are singing, reading novel stories, playing guitar, and playing the ukulele.</p>
+            </div>
+        </div>
+        
+    </section>
+    <button onclick="toggleVideo()">throwback video 2 years ago</button>
+            <!-- Video container -->
+            <div id="video-container">
+                <video width="640" height="360" controls>
+                    <source src="vid.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+            </div>
+                        
+            <script>
+            function toggleVideo() {
+                var videoContainer = document.getElementById('video-container');
+                    if (videoContainer.style.display === 'none') {
+                        videoContainer.style.display = 'block';
+                        } else {
+                            videoContainer.style.display = 'none';
+                        }
+            }
+            </script>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="chart-container">
+            <div class="skill" data-skill="HTML">HTML</div>
+            <div class="skill" data-skill="CSS">CSS</div>
+            <div class="skill" data-skill="JavaScript">JavaScript</div>
+            <!-- Add more skills as needed -->
+        </div>
+    
+        <script src="script.js"></script>
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p> Phone Number: 09566603023</p>
+        <p> Email: andreasawali2@gmail.com</p>
+        <P> Address: Brgy.San Bartolome, San Pablo City, Laguna</P>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+          <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Description of Project 1.</p>
+          </div>
+          <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>Description of Project 2.</p>
+          </div>
+          <!-- Add more projects as needed -->
+        </div>
+      </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://web.facebook.com/andreyaxns" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@andreyaxns" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/andreyaxns" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <p> &copy; 2024 My Portfolio</p>
+            
+    </footer>
+</body>
+</html>
